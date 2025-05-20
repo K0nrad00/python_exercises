@@ -1,9 +1,14 @@
 from game_data import data
 from random import choice
-# from art import vs, logo
+# from art import vs, logo # NO need for ascii files here
 
 # TODO Get random name, desc and country from data list (A)
 # TODO get another one ^ (B)
+# TODO if user is correct:
+## make B follower an A option for next choice
+## add correct guess to the TOTAL_SCORE (that starts at 0)
+## ask again (loop)
+# TODO if user is wrong - end game (show result of comparison and TOTAL_SCORE)
 def get_followers_details(data_list: list) -> tuple:
     random_entry = choice(data_list)
     return random_entry['name'], random_entry['description'], random_entry['country'], random_entry['follower_count']
@@ -18,12 +23,7 @@ print(f"Compare A: {name_A}, a {description_A}, from {country_A}.")
 print(f"Against B: {name_B}, a {description_B}, from {country_B}: ")
 user_choice = input("Who has more followers? type 'a' or 'b': ").lower()
 
-# TODO if user is correct:
-## make B follower an A option for next choice
-## add correct guess to the TOTAL_SCORE (that starts at 0)
-## ask again (loop)
-# TODO if user is wrong - end game (show result of comparison and TOTAL_SCORE)
-#
+
 
 def is_correct_guess() -> bool:
     """Check if user guess of followers number is correct"""
