@@ -1,6 +1,5 @@
 import random
-
-import colorgram
+# import colorgram
 import turtle as t
 
 ## THIS IS ONLY PREP STEP TO GET COLORS FROM THE image.jpg
@@ -23,8 +22,6 @@ import turtle as t
 #     color_list.append(tuple_of_colors)
 
 # print(color_list)
-
-
 
 color_list_no_white = [(232, 241, 239), (1, 10, 30), (229, 235, 242), (239, 232, 238), (122, 95, 41),
                        (71, 31, 21), (238, 212, 72), (220, 81, 59), (226, 117, 100), (93, 1, 21), (178, 140, 171),
@@ -50,14 +47,13 @@ def line_of_dots(y_axis_offset):
         timmy.color(random.choice(color_list_no_white))
         timmy.dot(20)
         # timmy.pu() # NOT needed
-        timmy.forward(50)
+        timmy.forward(50) # spacing on x-axis
         # timmy.pendown() # Not needed
-
 
 y_axis = -200
 for _ in range(10):
     line_of_dots(y_axis)
-    y_axis += 50
+    y_axis += 50 # spacing on y-axis
 
 screen = t.Screen()
 # # screen.bgcolor("yellow")
