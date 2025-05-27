@@ -64,9 +64,9 @@ while is_machine_on:
         user_choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
         if user_choice == "espresso" or user_choice == "latte" or user_choice == "cappuccino":
             chosen_drink_ingredients = MENU[user_choice]
-            print("Chosen drink", chosen_drink_ingredients)  # DEBUG
+            # print("Chosen drink", chosen_drink_ingredients)  # DEBUG
             chosen_drink_cost = MENU[user_choice]['cost']
-            print("Drink cost", chosen_drink_cost)  # DEBUG
+            # print("Drink cost", chosen_drink_cost)  # DEBUG
             # TODO 4: only ask for user_coins if there's enough resources
             if is_resource_sufficient(chosen_drink_ingredients["ingredients"]):
                 quarters = float(input("Please insert the coins. \nHow many quarters?: "))  # 25c -> 0.25
