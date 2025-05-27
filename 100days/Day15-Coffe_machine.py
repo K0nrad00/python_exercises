@@ -84,6 +84,9 @@ while is_machine_on:
                     # update the resources each time
                     resources = calculate_resources(chosen_drink_ingredients,
                                                     resources)  # udpating resource dict with calculate_resources for next run
+            else:
+                print("I can't make another drink..")
+                is_machine_on = False # Turn off if there's not enough resources
         elif user_choice == "off":
             print("Powering off..")
             is_machine_on = False
