@@ -82,7 +82,6 @@ while is_machine_on:
                     user_change = round(user_coins - chosen_drink_cost, 2)
                     print(f"Here's your change: ${user_change}, Enjoy your drink")
                     # update the resources each time
-                    calculated_resources = calculate_resources(chosen_drink_ingredients, resources)
                     resources = calculate_resources(chosen_drink_ingredients,
                                                     resources)  # udpating resource dict with calculate_resources for next run
         elif user_choice == "off":
