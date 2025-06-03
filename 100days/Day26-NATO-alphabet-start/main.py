@@ -22,7 +22,7 @@
 
 import pandas
 #TODO 1. Create a dictionary in this format:
-{"A": "Alfa", "B": "Bravo"}
+# {"A": "Alfa", "B": "Bravo"}
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 # data_text = pandas.read_table("nato_ph.txt") # TEST text file
 # print(data_text) # TEST text file
