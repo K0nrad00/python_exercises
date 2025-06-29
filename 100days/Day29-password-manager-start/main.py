@@ -18,7 +18,7 @@ def generate_password():
     password_list += [random.choice(numbers) for number in range(nr_numbers)]
     random.shuffle(password_list)
     password = "".join(password_list)
-    password_entry.insert(0, password)
+    password_entry.insert(0, password) # insert password into password field starting @ index 0, insert is python built in function
     pyperclip.copy(password) # copy to clipboard
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
