@@ -5,8 +5,8 @@ import datetime as dt
 import pandas
 import random
 
-my_email = "konrad.wrobel.tidal@gmail.com" #your email here
-password = "fagf svas ievj egaw" # Password for 3rd party apps here
+my_email = "" #your email here
+password = "" # Password for 3rd party apps here
 EMAIL_BODY = "" #to change [NAME] in the letter
 
 # 2. Check if today matches a birthday in the birthdays.csv
