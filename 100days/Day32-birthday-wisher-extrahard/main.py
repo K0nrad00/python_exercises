@@ -11,11 +11,11 @@ EMAIL_BODY = "" #to change [NAME] in the letter
 
 # 2. Check if today matches a birthday in the birthdays.csv
 current_month , current_day = dt.datetime.now().month, dt.datetime.now().day
-print(current_day)
+# print(current_day) # DEBUG
 
 data = pandas.read_csv("birthdays.csv")
 list_of_rows = data.to_dict(orient="records")
-print(list_of_rows)
+# print(list_of_rows) # DEBUG
 # 3. If step 2 is true, pick a random letter from letter templates and replace the
 # [NAME] with the person's actual name from birthdays.csv
 letters = ["letter_templates/letter_1.txt" , "letter_templates/letter_2.txt", "letter_templates/letter_3.txt"]
