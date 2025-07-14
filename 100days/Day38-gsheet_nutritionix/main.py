@@ -4,7 +4,7 @@ import requests
 import datetime as dt
 
 
-GMAIL_USED = os.environ["GMAIL_USED"]
+# GMAIL_USED = os.environ["GMAIL_USED"] # NOT needed - this is only for my own information, so can be reused
 NUTRI_APP_ID = os.environ["NUTRI_APP_ID"]
 NUTRI_API_KEY = os.environ["NUTRI_API_KEY"]
 SHEETY_AUTHZ = os.environ["SHEETY_AUTHZ"]
